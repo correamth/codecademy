@@ -48,8 +48,8 @@ function create() {
   this.physics.add.collider(gameState.player, bugs, () => {
     bugGenLoop.destroy();
     this.physics.pause();
-    this.add.text(180, 250, 'Game Over', { fontSize: '15px', fill: '#000000' });
-    this.add.text(152, 270, 'Click to Restart', { fontSize: '15px', fill: '#000000' });
+    this.add.text(180, 250, 'Game Over', { fontSize: '20px', fill: '#000000' });
+    this.add.text(152, 270, 'Click to Restart', { fontSize: '20px', fill: '#000000' });
     
 		// Add your code below:
     this.input.on('pointerup', () =>{
@@ -61,9 +61,9 @@ function create() {
 
 function update() {
   if (gameState.cursors.left.isDown) {
-    gameState.player.setVelocityX(-160);
+    gameState.player.setVelocityX(-200);
   } else if (gameState.cursors.right.isDown) {
-    gameState.player.setVelocityX(160);
+    gameState.player.setVelocityX(200);
   } else {
     gameState.player.setVelocityX(0);
   }
