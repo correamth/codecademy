@@ -11,7 +11,7 @@ const gameState = {
 };
 
 function create() {
-  gameState.player = this.physics.add.sprite(225, 450, 'codey').setScale(.5);
+  gameState.player = this.physics.add.sprite(225, 450, 'codey').setScale(.9);
   
   const platforms = this.physics.add.staticGroup();
 
