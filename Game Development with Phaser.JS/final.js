@@ -33,7 +33,7 @@ function create() {
   }
 
   const bugGenLoop = this.time.addEvent({
-    delay: 100,
+    delay: 150,
     callback: bugGen,
     callbackScope: this,
     loop: true,
